@@ -10,6 +10,7 @@
     <!-- Linking Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script> function goHome() { window.location.href = 'index.html';}</script>
   </head>
   <body>
     <!-- Header / Navbar -->
@@ -33,7 +34,7 @@
             <a href="#menu" class="nav-link">Menu</a>
           </li>
           <li class="nav-item">
-            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#testimonials" class="nav-link">Developer</a>
           </li>
           <li class="nav-item">
             <a href="#gallery" class="nav-link">Gallery</a>
@@ -57,8 +58,7 @@
             <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
 
             <div class="buttons">
-              <a href="#" class="button order-now">Order Now</a>
-              <a href="#contact" class="button contact-us">Contact Us</a>
+              <button class="btn" onclick="goHome()"><i class="fa fa-home"></i> Home</button>
             </div>
           </div>
           <div class="hero-image-wrapper">
@@ -70,19 +70,34 @@
       <!-- About section -->
       <section class="about-section" id="about">
         <div class="section-content">
-          <div class="about-image-wrapper">
-            <img src="images/user-6.jpg" alt="user-6" class="user-6" />
-          </div>
           <div class="about-details">
             <h2 class="section-title">About Us</h2>
             <p class="text"> Welcome to M'RVS COFFEE Shop your couzy neighborhood cafe where every cup tells a story. NESTLED in the heart of the community, WERE MORE THAN JUST COFFEE shop were a space where friends, families and coffee lovers come together to relax, recharge, and connect.</p>
+            <div class="mission_vision">
+              <div class="mission">
+                <h3>Mission</h3>
+                <p>At M'RVS Coffeeshop, we are dedicated to delivering an exceptional coffee experience that blends passion, quality, and community. We source the finest beans, expertly crafted beverages, and a warm, inviting space where customers can relax, connect, and savor every sip. Whether you’re looking for a quick pick-me-up or a place to unwind, our mission is to enrich your day with the perfect cup of coffee, served with care.</p>
+              </div>
+              <div class="vision">
+                <h3>Vision</h3>
+                <p>Our vision is to become a beloved community hub, where every cup of coffee is more than just a drink—it's an experience. We strive to inspire a culture of connection, creativity, and comfort, while continually innovating and growing. Through sustainable practices and a commitment to quality, we aim to bring the best of coffee to our neighborhood, one cup at a time.
+               </p>
+              </div>
+            </div>
+            <div class="image_contain">
+            <div class="about-image-wrapper">
+              <img src="images/user-6.jpg" alt="user-6" class="user-6" />
+            </div>
+            <div class="poster_container">
+              <img src="images/Black and White Simple Coffee Menu Doubled Sided Poster_20241108_192350_0000.png" alt="user-7" class="user-7" />
+         
+        </div>
+      </div>
             <div class="social-link-list">
-              <div class="poster_container">
-              <img src="images/user-7.jfif" alt="user-7" class="user-7" />
-              <div class="container">
-                <iframe width="500" height="315" src="https://www.youtube.com/embed/HFx8qFUmpHI?si=YvKAAOTuSSJeh7l_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="container">
+                  <iframe width="500" height="315" src="https://www.youtube.com/embed/HFx8qFUmpHI?si=YvKAAOTuSSJeh7l_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -93,15 +108,14 @@
         <div class="section-content">
           <ul class="menu-list">
             <li class="menu-item">
-           
+              <img src="images/hot-beverages.png" alt="Hot Beverages" class="menu-image" />
               <div class="menu-details">
-                <img src="images/hot-beverages.png" alt="hot_beverages" class="menu-image" />
                 <h3 class="name">Hot Beverages</h3>
                 <p class="text">Wide range of Steaming hot coffee to make you fresh and light.</p>
               </div>
             </li>
             <li class="menu-item">
-              <img src="images/cold-beverages.png" alt="cold_beverages" class="menu-image" /> 
+              <img src="images/cold-beverages.png" alt="Cold Beverages" class="menu-image" />
               <div class="menu-details">
                 <h3 class="name">Cold Beverages</h3>
                 <p class="text">Creamy and frothy cold coffee to make you cool.</p>
@@ -141,7 +155,7 @@
 
       <!-- Testimonials section -->
       <section class="testimonials-section" id="testimonials">
-        <h2 class="section-title">student</h2>
+        <h2 class="section-title">Developer</h2>
         <div class="section-content">
           <div class="slider-container swiper">
             <div class="slider-wrapper">
@@ -154,7 +168,6 @@
               </ul>
         </div>
       </section>
-    
 
       <!-- Gallery section -->
       <section class="gallery-section" id="gallery">
